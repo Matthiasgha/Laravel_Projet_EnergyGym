@@ -1,0 +1,15 @@
+.body_home{
+    background-color: lightsalmon;
+   margin: 0;
+   padding: 0;
+}
+
+.header_nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: wheat;
+}
+.header_nav_a{
+    margin: 10px;
+}
