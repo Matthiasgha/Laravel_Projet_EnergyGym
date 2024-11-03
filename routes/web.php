@@ -1,24 +1,20 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AcceuilController;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\CoursController;
+use App\Http\Controllers\TarifsController;
+use App\Http\Controllers\MentionslegalController;
+ 
 
-Route::get('/', function () {
-    return view('home');
-})->name('home');
+Route::get('/', [AcceuilController::class,'index' ])->name('acceuil.index');
 
-Route::get('/contact', function () {
-    return view('contact');
-})->name('contact');
+Route::get('/contact', [ContactController::class,'index'] )->name('contact.index');
 
-Route::get('/cours', function () {
-    return view('cours');
-})->name('cours');
+Route::get('/cours', [CoursController::class,'index'])->name('cours.index');
 
-Route::get('/tarifs', function () {
-    return view('tarifs');
-})->name('abonnements');
+Route::get('/tarifs',[TarifsController::class,'index' ] )->name('abonnements.index');
 
-Route::get('/mentions', function () {
-    return view('mentions');
-})->name('mentions');
+Route::get('/mentions', [MentionslegalController::class,'index'])->name('mentionslegal.index');
 

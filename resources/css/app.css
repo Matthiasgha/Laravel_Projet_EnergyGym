@@ -1,15 +1,349 @@
-.body_home{
-    background-color: lightsalmon;
-   margin: 0;
-   padding: 0;
+body {
+    background-color: #bdb76b79;
+    margin: 0;
+    padding: 0;
 }
 
-.header_nav{
+.container-base {
+    font-family: 'Bebas Neue', sans-serif;  
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+h1 {
+    margin: 15px;
+}
+
+/* Header */
+.banniere {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../../public/img/bann.jpeg);
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    background-color: #e7e7e7;
+    border: rgba(0, 0, 0, 0.445) 1px solid;
+}
+
+.nav_ul {
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-color: wheat;
+    width: 100%;
+    justify-content: space-around;
 }
-.header_nav_a{
-    margin: 10px;
+
+.nav_ul li {
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.nav_ul li::after {
+    content: "";
+    width: 1px;
+    display: block;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: black;
+    position: absolute;
+}
+
+.nav_a {
+    color: #0d3358;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 6px 20px;
+    display: block;
+}
+
+li {
+    list-style: none;
+}
+
+/* Footer */
+footer {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-family: 'Bebas Neue', sans-serif;  
+}
+
+.footer_section, .footer_section_reseaux {
+    margin: 10px 0;
+}
+
+.footer_ul, .footer_ul_reseaux {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer_li {
+    font-size: 1rem;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer_li:hover {
+    color: #1e90ff;
+}
+
+.footer_ul li, .footer_ul_reseaux li {
+    margin: 5px 0;
+}
+
+.footer_section_reseaux a {
+    color: #ffffff;
+    font-size: 1rem;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+
+
+/* Accueil et mentions */
+p.description {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333333;
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #1e90ff;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Carrousel */
+.carrousel {
+    position: relative;
+    max-width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.carrousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: 400px; 
+    object-fit: cover;
+    display: block;
+}
+
+#image1:checked ~ .carrousel-images {
+    transform: translateX(0);
+}
+
+#image2:checked ~ .carrousel-images {
+    transform: translateX(-100%);
+}
+
+#image3:checked ~ .carrousel-images {
+    transform: translateX(-200%);
+}
+
+.navigation {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.nav-button {
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    background-color: #8bc06c;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+.nav-button:hover {
+    background-color: #BDB76B99;
+}
+/* Page cours */
+h2, p {
+    margin: 10px 0;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.cours-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.cours-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    width: 180px;
+    transition: transform 0.1s;
+}
+
+.cours-card:hover {
+    transform: scale(1.05);
+}
+
+.svg{
+    font-size: 50px;
+    text-align: center;
+}
+.cours-card  .svg{
+    width: 60px;
+    height: 60px;
+    fill: #1e90ff;
+    margin-bottom: 10px;
+}
+
+.cours-time, .cours-day, .cours-name {
+    font-size: 0.9rem;
+    margin: 5px 0;
+    color: #555;
+}
+
+.cours-name {
+    color: #1e90ff;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Page contact */
+.container-form {
+    width: 90%;
+    max-width: 700px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form label {
+    text-align: left;
+    font-weight: bold;
+    color: #555;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    background-color: #bdb76bf6;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #c2b93dda;
+}
+
+/* Abonnements */
+.abonnements-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.abonnement-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.abonnement-card:hover {
+    transform: scale(1.05);
+}
+
+.abonnement-card h2 {
+    font-size: 1.2rem;
+    color: #1e90ff;
+    margin-bottom: 10px;
+}
+
+.abonnement-card .price {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.services-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+    color: #555;
+}
+
+.services-list li {
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+.invitation {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #333;
+    font-weight: bold;
 }
