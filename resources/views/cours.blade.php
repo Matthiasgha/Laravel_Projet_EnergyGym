@@ -2,7 +2,7 @@
 @section('title', $title)  
 @section('content')
 <div class="container">
-    <h1>Cours</h1>
+    <h2>Cours</h2>
     <p>Horaires d'ouverture de la salle de sport:</p>
     <ul>
         <li>Lundi - Vendredi : 6h00 - 22h00</li>

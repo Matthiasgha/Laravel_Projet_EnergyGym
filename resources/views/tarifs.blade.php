@@ -2,29 +2,29 @@
 @section('title', $title)  
 @section('content')
 <div class="container">
-    <h1>Abonnements</h1>
+    <h2>Abonnements</h2>
     <p>Découvrez nos offres d'abonnement adaptées à tous vos besoins !</p>
     <div class="abonnements-section">
         <div class="abonnement-card">
-            <h2>Mensuel</h2>
+            <h2 class="h2">Mensuel</h2>
             <p>Accès illimité</p>
             <p class="price">45€/mois</p>
         </div>
         
         <div class="abonnement-card">
-            <h2>Annuel</h2>
+            <h2 class="h2">Annuel</h2>
             <p>Accès illimité + 2 séances de coaching offertes</p>
             <p class="price">480€/an</p>
         </div>
         
         <div class="abonnement-card">
-            <h2>Séance unique</h2>
+            <h2 class="h2">Séance unique</h2>
             <p>Pour un essai ou un accès ponctuel</p>
             <p class="price">10€</p>
         </div>
     </div>
 
-    <h2>Services supplémentaires</h2>
+    <h2 class="h2">Services supplémentaires</h2>
     <ul class="services-list">
         <li>Coaching personnalisé</li>
         <li>Programmes d'entraînement sur mesure</li>

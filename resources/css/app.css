@@ -15,7 +15,7 @@ body {
     padding: 20px;
 }
 
-h1 {
+h2 {
     margin: 15px;
 }
 
@@ -193,7 +193,7 @@ input[type="radio"] {
     background-color: #BDB76B99;
 }
 /* Page cours */
-h2, p {
+p {
     margin: 10px 0;
 }
 
@@ -316,7 +316,8 @@ ul {
     transform: scale(1.05);
 }
 
-.abonnement-card h2 {
+.abonnement-card .h2 {
+    margin: 10px 0;
     font-size: 1.2rem;
     color: #1e90ff;
     margin-bottom: 10px;

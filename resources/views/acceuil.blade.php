@@ -2,7 +2,7 @@
 @section('title', $title)  
 @section('content')
 <div class="container">
-<h1>Acceuil</h1>
+<h2>Acceuil</h2>
 <p class="description">Energym est une salle de sport moderne et dynamique, conçue pour répondre aux besoins de tous les passionnés de fitness, des débutants aux athlètes confirmés. Située au cœur de la ville, cette salle propose un espace d'entraînement complet où chacun peut progresser à son rythme et dans un environnement motivant.
     Chez Energym, vous trouverez des équipements de pointe qui garantissent des séances variées et efficaces, ainsi que des espaces d'entraînement fonctionnel parfaitement adaptés aux besoins de tous. Que vous souhaitiez travailler votre cardio, développer votre musculature, améliorer votre souplesse ou simplement vous défouler, nous avons tout ce qu'il faut pour que vos objectifs deviennent réalité.
     Notre offre inclut une large gamme de cours collectifs, allant du HIIT et de la musculation aux séances de yoga et de pilates. Ces cours sont animés par des coachs certifiés et expérimentés, qui sont là pour vous guider, vous conseiller et vous motiver tout au long de votre parcours. Leur expertise vous aidera à adopter les meilleures techniques pour maximiser vos résultats tout en évitant les blessures.
