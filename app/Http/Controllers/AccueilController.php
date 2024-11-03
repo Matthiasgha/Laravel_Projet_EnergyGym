@@ -4,12 +4,12 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class AcceuilController extends Controller
+class AccueilController extends Controller
 {
     function index() {
         $title = 'Accueil';
 
-        return view('acceuil',[
+        return view('accueil',[
             'title' => $title,
         ]);
     }

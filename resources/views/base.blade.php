@@ -5,17 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title> {{config('app.name')}} - @yield('title') </title>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     {{-- <title> {{config('app.name')}}  - @yield('title') </title> --}}
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body> 
     <div class="container-base">
         <header>
-        <div class="banniere"></div>
+        <div class="banniere"> <a href="{{route('accueil.index') }}"><h1>Energym</h1></a></div>
             <nav class="nav">
                 <ul class="nav_ul">
-                    <li><a class="nav_a" href="{{route('acceuil.index') }}">Acceuil</a></li>
+                    <li><a class="nav_a" href="{{route('accueil.index') }}">Accueil</a></li>
                     <li><a class="nav_a" href="{{route('abonnements.index') }}">Abonnements</a></li>
                     <li><a class="nav_a" href="{{route('cours.index') }}">Cours</a></li>
                     <li><a class="nav_a" href="{{route('contact.index') }}">Contact</a></li>
