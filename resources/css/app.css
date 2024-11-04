@@ -12,11 +12,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 15px;
 }
 
 h2 {
-    margin: 15px;
+    padding: 15px;
 }
 
 /* Header */
@@ -39,13 +39,12 @@ h1{
     background-size: cover;
     background-position: center;
     background-image: url(../../public/img/bann.jpeg);
-    padding: 0;
-    margin: 0;
 }
 
 nav {
     display: flex;
     width: 100%;
+    margin: auto;
     background-color: #e7e7e7;
     border: rgba(0, 0, 0, 0.445) 1px solid;
 }
@@ -80,7 +79,7 @@ nav {
     text-transform: uppercase;
     font-weight: bold;
     text-decoration: none;
-    padding: 6px 20px;
+    padding: 2px 20px;
     display: block;
 }
 
@@ -92,7 +91,7 @@ li {
 footer {
     background-color: #1e1e1e;
     color: #ffffff;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     display: flex;
     justify-content: space-around;
@@ -114,7 +113,7 @@ footer {
     font-size: 1rem;
     color: #ffffff;
     text-decoration: none;
-    transition: color 0.3s;
+    transition: color 0.3s ease;
 }
 
 .footer_li:hover {
@@ -129,7 +128,7 @@ footer {
     color: #ffffff;
     font-size: 1rem;
     margin: 0 10px;
-    transition: color 0.3s;
+    transition: color 0.3s ease;
 }
 
 
@@ -262,6 +261,23 @@ ul {
 }
 
 /* Page contact */
+.map-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 60%; 
+    height: 0;
+    overflow: hidden;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
 .container-form {
     width: 90%;
     max-width: 700px;
@@ -360,4 +376,28 @@ ul {
     font-size: 1rem;
     color: #333;
     font-weight: bold;
+}
+
+/* responsive */
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav_ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .nav_ul li {
+        width: 100%;
+        margin: 5px 0; 
+    }
+
+    .nav_ul li::after {
+        display: none; 
+    }
 }
