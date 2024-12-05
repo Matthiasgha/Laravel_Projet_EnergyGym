@@ -11,7 +11,7 @@
 <body> 
     <div class="container-base">
         <header>
-        <div class="banniere"> <a href="{{route('accueil.index') }}"><h1>Energym</h1></a></div>
+        <div class="banniere"></div>
             <nav class="nav">
                 <ul class="nav_ul">
                     <li><a class="nav_a" href="{{route('accueil.index') }}">Accueil</a></li>

@@ -8,7 +8,7 @@ use App\Http\Controllers\TarifsController;
 use App\Http\Controllers\MentionslegalController;
  
 
-Route::get('/', [AccueilController::class,'index' ])->name('accueil.index');
+Route::get('/', [AccueilController::class,'index' ] )->name('accueil.index');
 
 Route::get('/contact', [ContactController::class,'index'] )->name('contact.index');
 

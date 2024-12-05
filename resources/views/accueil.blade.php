@@ -2,6 +2,11 @@
 @section('title', $title)  
 @section('content')
 <div class="container">
+    <div class="scroll-top">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 11l7-7 7 7M5 19l7-7 7 7" />
+        </svg>
+      </div>
 <h2>Accueil</h2>
 <p class="description">Energym est une salle de sport moderne et dynamique, conçue pour répondre aux besoins de tous les passionnés de fitness, des débutants aux athlètes confirmés. Située au cœur de la ville, cette salle propose un espace d'entraînement complet où chacun peut progresser à son rythme et dans un environnement motivant.
     Chez Energym, vous trouverez des équipements de pointe qui garantissent des séances variées et efficaces, ainsi que des espaces d'entraînement fonctionnel parfaitement adaptés aux besoins de tous. Que vous souhaitiez travailler votre cardio, développer votre musculature, améliorer votre souplesse ou simplement vous défouler, nous avons tout ce qu'il faut pour que vos objectifs deviennent réalité.
@@ -14,13 +19,13 @@
         <input type="radio" name="carrousel" id="image3">
         <div class="carrousel-images">
             <div class="slide" id="slide1">
-                <img src="./img/Appareils-de-musculation-professionnels.jpg" alt="Image 1">
+                <img src="./img/Appareils-de-musculation-professionnels.jpg" alt="image 1">
             </div>
             <div class="slide" id="slide2">
-                <img src="./img/boxe-muay-thai-02.jpg" alt="Image 2">
+                <img src="./img/boxe-muay-thai-02.jpg" alt="image 2">
             </div>
             <div class="slide" id="slide3">
-                <img src="./img/spc-170127-1061_5.jpg" alt="Image 3">
+                <img src="./img/spc-170127-1061_5.jpg" alt="image 3">
             </div>
         </div>
         <div class="navigation">
@@ -28,7 +33,22 @@
             <label for="image2" class="nav-button"></label>
             <label for="image3" class="nav-button"></label>
         </div>
+        <h2>Nos coachs</h2>
+        <div class="coach">
+          <div>
+            <div class="coach_2"></div>
+            <p class="P">Coach Daishi</p>
+        </div>    
+        <div>
+            <div class="coach_1"></div>
+            <p class="P">Coach Théo</p>
+        </div>
+      
+        <div>
+            <div class="coach_3"></div>
+            <p class="P">Coach Alexis</p>
+        </div>
+        </div>
     </div>
-    
 </div>
 @endsection
