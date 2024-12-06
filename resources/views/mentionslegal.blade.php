@@ -16,7 +16,7 @@
     
     Le présent site, accessible à l'URL www.energym.com (le « Site »), est édité par :
     
-    L'association Gym of Clans, enregistrée auprès de la préfecture/sous-préfecture de 69 - Préfecture Lyon sous le numéro W13DKEZZ, ayant son siège situé à 22 Avenue de la Vitalité, 69003 Lyon, France, représentée par John Doe dûment habilité(e)
+    L'association Gym of Clans, enregistrée auprès de la préfecture/sous-préfecture de 69 - Préfecture Lille sous le numéro W13DKEZZ, ayant son siège situé à 22 Avenue de la Vitalité, 59000 Lille, France, représentée par John Doe dûment habilité(e)
     
     Hébergement
     
@@ -29,8 +29,8 @@
     Nous contacter 
     
     Par téléphone : +33472345678
-    Par email : contact@energym-lyon.fr
-    Par courrier : 22 Avenue de la Vitalité 69003 Lyon, France
+    Par email : contact@energym-lille.fr
+    Par courrier : 22 Avenue de la Vitalité 59000 lille, France
     
     Données personnelles
     
